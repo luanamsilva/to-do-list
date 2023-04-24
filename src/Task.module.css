@@ -1,0 +1,94 @@
+ .tasksContainer{
+
+  width: 100%;
+  max-width: 43.5rem;
+margin: 0 auto;
+padding-top: 0 1rem;
+margin-top: 2rem;
+margin-bottom: 1.5rem;
+border-radius: 8px;
+
+ }
+
+
+.header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 1.5rem;
+ }
+
+ .header div{
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+ }
+
+ .header p{
+  padding: 1rem 0.875rem;
+  color: var(--blue-800);
+  font-size: 0.975rem;
+  font-weight: 700;
+ }
+
+ .header span{
+  background: var(--gray-800);
+  color: var(--gray-400);
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 700;
+ }
+ .list{
+  width: 100%;
+  background: var(--gray-600);
+  border: 1px solid var(--gray-700);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.list button{
+  background: transparent;
+  border: none;
+  color: var(--gray-100);
+}
+
+.list p{
+  font-size: 0.875rem;
+  line-height: 1.18rem;
+  color: var(--gray-100);
+  margin-right: auto; /*Isso vai fazer com que o botao da direita fique o maximo da esquerda possivel e o da esquerda pra direita */
+}
+
+.checkContainer{
+  width: 1.125rem;
+  height: 1.125rem;
+  background: none;
+  border: none;
+}
+.checkContainer div{
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--blue-800);
+  border-radius: 9px;
+}
+
+.emptyTask{
+  width: 100%;
+  max-width: 43.5rem;
+  height: 10rem;
+  background: var(--gray-600);
+  color: var(--gray-400);
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+ align-items: center;
+gap: 2rem;
+border-radius: 8px;
+padding: 2rem;
+margin-top: 2rem;
+}

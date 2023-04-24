@@ -1,0 +1,80 @@
+.listContainer{
+ display: flex;
+ flex-direction: column;
+ gap: 0.75rem;
+}
+
+.list{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 43.5rem;
+  background: var(--gray-600);
+  border: 1px solid var(--gray-700);
+  padding: 0 1rem;
+  margin-bottom: 0.3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  height: 3.375rem;
+
+
+
+}
+
+
+.list button{
+  background: transparent;
+  border: none;
+  color: var(--gray-100);
+}
+
+.toDone{
+  font-size: 0.875rem;
+  line-height: 1.18rem;
+  color: var(--gray-100);
+  margin-right: auto; /*Isso vai fazer com que o botao da direita fique o maximo da esquerda possivel e o da esquerda pra direita */
+}
+
+.checkContainer{
+  width: 1.125rem;
+  height: 1.125rem;
+  background: none;
+  border: none;
+}
+.checkContainer div{
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--blue-800);
+  border-radius: 9px;
+}
+
+
+.deleteButton{
+  background: none;
+}
+.deleteButton:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.done{
+  font-size: 0.875rem;
+  line-height: 1.18rem;
+  color: var(--gray-100);
+  margin-right: auto;
+  text-decoration: line-through;
+}
+
+.tasksContainer{
+
+  width: 100%;
+  max-width: 43.5rem;
+margin: 0 auto;
+padding-top: 0 1rem;
+margin-top: 2rem;
+margin-bottom: 1.5rem;
+border-radius: 8px;
+
+ }

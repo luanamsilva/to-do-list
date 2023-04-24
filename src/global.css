@@ -1,0 +1,41 @@
+:root {
+  --white: #ffffff;
+  --gray-100: #e1e1e6;
+  --gray-300: #c4c4cc;
+  --gray-400: #808080;
+  --gray-600: #262626;
+  --gray-700: #29292e;
+  --gray-800: #1A1A1A;
+  --gray-900: #0D0D0D;
+
+  --blue-200: #E2F4FE;
+  --blue-300:#B7E4FF;
+  --blue-500: #4EA8DE;
+  --blue-800: #1E6F9F;
+
+  --purple: #8284FA;
+
+  --pink-300: #D469CB;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+body{
+  min-height: 100vh; /*para ocupar tela inteira */ 
+ -webkit-font-smoothing: antialiased; /* para as fontes ficarem mais claras*/ 
+ background: var(--gray-800);
+  color: var(--white);
+}
+
+:focus{
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--green-500);
+}
+
+

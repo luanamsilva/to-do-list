@@ -1,0 +1,60 @@
+.header{
+  background: var(--gray-900);
+  height: 12.5rem;
+  align-items: ceenter;
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+
+.header img{
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.taskArea {
+  height: 3.375rem;
+    width: 100%;
+    max-width: 46rem;
+  display: flex;
+gap: 0.5rem;
+padding: 0 1rem;
+position: absolute;
+bottom: calc(-3.375rem / 2); /*para centralizar utilizamos a função calc e o valor negativo pra ficar abaixo da linha */
+}
+
+
+.taskArea input{
+  
+  background: var(--gray-600);
+  height: 100%;
+  flex: 1;
+  border: 1px solid var(--gray-800);
+  padding:  0 1rem;
+  border-radius: 0.5rem;
+  color: var(--gray-400);
+  font-size: 1rem;
+   }
+
+   .taskArea input::placeholder{  /*para pegar somente o elemento placeholder do input   utilizo :: */
+
+    opacity: 0.8;
+   }
+  .taskArea button{
+    height: 100%;
+  padding: 0 1rem;
+   background: var(--blue-800);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+ color: var(--white);
+ border: none;
+ gap: 0.375rem;
+  font-size: 0.875;
+ }
+
+ .buttonCreate:hover{
+  opacity: 0.8;
+ }

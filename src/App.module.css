@@ -1,0 +1,54 @@
+.wraper{
+ 
+  max-width: 70rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 256px 1fr;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+@media(max-width: 768px){
+.wraper{
+  grid-area: 1fr;
+}
+}
+
+
+
+.list{
+  
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.list button{
+  background: transparent;
+  border: none;
+  color: var(--gray-100);
+}
+
+.list p{
+  font-size: 0.875rem;
+  line-height: 1.18rem;
+  color: var(--gray-100);
+  margin-right: auto; /*Isso vai fazer com que o botao da direita fique o maximo da esquerda possivel e o da esquerda pra direita */
+}
+
+.checkContainer{
+  width: 1.125rem;
+  height: 1.125rem;
+  background: none;
+  border: none;
+}
+.checkContainer div{
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--blue-800);
+  border-radius: 9px;
+  
+
+}
+
