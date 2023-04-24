@@ -2,9 +2,9 @@ Projeto de lista de tarefas.
 
 #Instalação
 
-npm install 
+-  `npm install `
 
 
 #Para rodar
 
-npm run dev
+-  `npm run dev `

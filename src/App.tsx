@@ -2,7 +2,7 @@ import styles from './App.module.css'
 import './global.css'
 import { Header } from './Components/Header'
 import { Task } from './Task'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Item } from './types/Item'
 import { ListItem } from './Components/ListItem'
 
@@ -10,10 +10,21 @@ import { ListItem } from './Components/ListItem'
 
 const App = () =>{
 
+  const LOCAL_STORAGE_KEY = "todo:savedTasks"
   const [list, setList] = useState<Item[]>([
    
   ]);
 
+  function loadLocalStorage(){
+    const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
+    if(saved){
+      setList(JSON.parse(saved))
+    }
+  }
+
+  useEffect(()=> {
+    loadLocalStorage();
+  },[])
   const handleAddTask = (taskTitle:string) =>{
     let newList = [...list];
     newList.push({
@@ -21,14 +32,19 @@ const App = () =>{
       title: taskTitle,
       isCompleted:false
     })
-    setList(newList)
+    setTaskAndSave(newList)
   }
 
+
+  function setTaskAndSave(newTasks: Item[]){
+    setList(newTasks);
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(newTasks))
+  }
  
 
   function deleteTask(taskTitle: string){
     const newTasks = list.filter((task)=> task.title !== taskTitle)
-    setList(newTasks)
+    setTaskAndSave(newTasks)
   }
 
   function handleTaskChange(id: number, isCompleted: boolean){
@@ -36,7 +52,7 @@ const App = () =>{
     for( let i in newList){
       if(newList[i].id === id){
         newList[i].isCompleted = isCompleted      }
-    }setList(newList)
+    }setTaskAndSave(newList)
   }
 
 
