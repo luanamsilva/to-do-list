@@ -7,4 +7,4 @@ npm install
 
 #Para rodar
 
-npm start
+npm run dev
